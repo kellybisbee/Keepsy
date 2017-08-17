@@ -42,9 +42,20 @@ p {
   min-height: 1px;
   margin: 0 2% 20px;
 }
- .benefits-image-block, .benefits-text-block {
-   display: inline-block;
-   position: relative;
-   padding-bottom: 30px;
-   vertical-align: middle;
+
+/* Benefits */
+.notes-block, .images-block, .links-block{
+  display: table;
 }
+.benefits-image-block, .benefits-text-block {
+  display: table-cell;
+  padding: 50px;
+  vertical-align: middle;
+  width: 50%;
+}
+
+
+ /* .benefits-image-block, .benefits-text-block {
+   display: inline-block;
+   vertical-align: middle;
+ } */
