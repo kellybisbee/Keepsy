@@ -73,7 +73,36 @@ p {
 #image .laptop-block {
   padding-left: 130px;
 }
- /* .benefits-image-block, .benefits-text-block {
+ /* Old benefits CSS
+ .benefits-image-block, .benefits-text-block {
    display: inline-block;
    vertical-align: middle;
  } */
+
+/* Media Queries */
+ @media (min-width: 768px) {
+   .container {
+     width: 750px;
+   }
+ }
+ @media (min-width: 992px) {
+   .container {
+     width: 970px;
+   }
+   .one-half {
+     width:46%;
+     display: inline-block;
+   }
+   .one-third {
+     width:29.33333%;
+     display: inline-block;
+   }
+   .one-fourth {
+     width:21%;
+   }
+ }
+ @media (min-width: 1200px) {
+   .container {
+     width: 1170px;
+   }
+ }
