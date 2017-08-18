@@ -2,20 +2,23 @@ html, body {
   overflow-x:hidden;
 }
 body {
-  font-family: proxima-nova, Helvetica, Arial, sans-serif;
+  font-family: 'Proxima Nova', proxima-nova, Helvetica, Arial, sans-serif;
   color:#1C2323;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Fredoka One', Helvetica, cursive;
 }
+h1 {
+  font-size: 48px;
+}
 h2 {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: normal;
   margin-bottom: 5px;
 }
 p {
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 22px;
+  line-height: 21px;
   font-weight: 300;
 }
 
@@ -44,17 +47,31 @@ p {
 }
 
 /* Benefits */
-.notes-block, .images-block, .links-block{
+.block, {
   display: table;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
-.benefits-image-block, .benefits-text-block {
+.laptop-block, .text-block {
   display: table-cell;
   padding: 50px;
   vertical-align: middle;
   width: 50%;
 }
-
-
+.laptop-block {
+  padding-right: 100px;
+}
+.text-block {
+    padding-left: 10%;
+}
+#image .text-block {
+  padding-right: 100px;
+}
+#image .laptop-block {
+  padding-left: 10%;
+}
  /* .benefits-image-block, .benefits-text-block {
    display: inline-block;
    vertical-align: middle;
