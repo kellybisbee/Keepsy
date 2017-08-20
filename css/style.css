@@ -135,7 +135,7 @@ p {
  /*HEADER*/
 header {
   color: #FFF;
-  background-image: url(/Users/kbisbee/desktop/keepsy/Images/hero-image.png);
+  background-image: url(../Images/hero-image.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
