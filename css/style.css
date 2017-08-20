@@ -47,6 +47,78 @@ p {
   margin: 0 2% 20px;
 }
 
+/*HEADER*/
+header {
+ color: #FFF;
+ background-image: url(../Images/hero-image.png);
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ height: 85%;
+}
+header nav {
+ padding: 1em 0;
+ width:100%;
+}
+
+header nav ul {
+  text-align: center;
+  display:block;
+  position: relative;
+  margin-right: 50px;
+}
+
+header nav ul > li {
+  list-style-type: none;
+  display: inline-block;
+  margin:0 15px;
+}
+header nav ul > li.btn-outline {
+  padding:10px 15px;
+  border:2px solid #30B9C3;
+  border-radius: 4px;
+}
+header nav ul > li.btn-outline:hover {
+  background:#30B9C3;
+}
+header nav ul > li > a {
+  color:#FFF;
+  text-decoration: none;
+}
+header nav ul > li.btn-outline:hover > a {
+  color:#FFF;
+}
+header .hero h1 {
+  font-size:48px;
+  font-weight: normal;
+  margin:95px 0 0;
+}
+header .hero p {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 100;
+  margin:10px 0 40px;
+}
+header .hero {
+  text-align: center;
+  display:block;
+  position: relative;
+}
+
+/* BUTTONS */
+.btn {
+  border-radius: 6px;
+  color:#FFFFFF;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  padding:10px 30px;
+  background: #30B9C3;
+  border: 2px solid #30B9C3;
+  box-shadow: 0px 2px 2px 0px #1EE3F2;
+}
+
 /*Benefits*/
 .notes .container {
   display: flex;
@@ -90,13 +162,17 @@ p {
 #images {
   padding-left: 50px;
 }
-
-
-
-
-
-
-/*BENEFITS */
+.text-block > h2 {
+  color: #D70582;
+}
+.text-block > ul > li {
+  list-style-type: none;
+  font-size: 18px;
+  padding-bottom: .5em;
+}
+.fa-check {
+  color: #30B9C3;
+}
 
 /* Benefits
 .block, {
@@ -131,81 +207,108 @@ p {
    vertical-align: middle;
  } */
 
-
- /*HEADER*/
-header {
-  color: #FFF;
-  background-image: url(../Images/hero-image.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 85%;
+/*PRICING*/
+.pricing {
+  background:url("../Images/pricing-image.png") top center no-repeat;
+  background-size:cover;
+  text-align: center;
+  padding:4em 0;
 }
-header nav {
-  padding: 1em 0;
-  width:100%;
- }
+.pricing h2, .pricing p {
+  color:#FFFFFF;
+}
+.pricing ul {
+  margin:0 auto;
+  padding:2em 0;
+}
+.pricing ul li {
+  list-style-type: none;
+}
 
- header nav ul {
+.box {
+  padding:0 15px 15px;
+  background: rgba(215,5,130,.1);
+  background-image: linear-gradient(-225deg, rgba(215,5,130,0.50) 0%, #B31974 50%);
+  box-shadow: 0 2px 4px 0 rgba(138,17,89,0.20);
+  min-height: 439px;
+  position: relative;
+  margin-top: 25px;
+}
+.box.middle {
+  min-height: 485px;
+  margin-top:0px;
+}
+.box h3 {
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  color: #FFF;
+  text-transform: uppercase;
+  background: rgba(138,17,89,.6);
+  box-shadow: 0 1px 2px 0 rgba(138,17,89,0.40);
+  left:0;
+  right:0;
+  top:0;
+  text-align: center;
+  margin:0 -15px 40px;
+  padding:10px 0;
+}
+.box h4 {
+  font-family: 'Fredoka One', Helvetica, sans-serif;
+  font-size:50px;
+  font-weight: normal;
+  margin:40px 0 10px;
+  color:#FFF;
+ }
+ .box h4 span {
+  font-size:32px;
+  vertical-align: top;
+}
+.box h4 span.month {
+  font-family: 'Fredoka One', Helvetica, sans-serif;
+  font-weight: 100;
+  color:#FFF;
+  font-size:20px;
+  vertical-align: middle;
+}
+.box ul li {
+  color: #FFF;
+  font-size:18px;
+  margin-bottom:20px;
+  font-weight: 100;
+}
+.box .btn {
+  position:absolute;
+  bottom:30px;
+  left:20px;
+  right:20px;
+}
+
+
+/* TESTIMONIALS */
+ .testimonials {
+   padding:4em 0;
    text-align: center;
-   display:block;
-   position: relative;
-   margin-right: 50px;
  }
-
- header nav ul > li {
+ .testimonials h2 {
+   color:#D70582;
+ }
+ .testimonials ul li {
    list-style-type: none;
-   display: inline-block;
-   margin:0 15px;
  }
- header nav ul > li.btn-outline {
-   padding:10px 15px;
-   border:2px solid #30B9C3;
-   border-radius: 4px;
- }
- header nav ul > li.btn-outline:hover {
-   background:#30B9C3;
- }
- header nav ul > li > a {
-   color:#FFF;
-   text-decoration: none;
- }
- header nav ul > li.btn-outline:hover > a {
-   color:#FFF;
- }
-header .hero h1 {
-   font-size:48px;
-   font-weight: normal;
-   margin:95px 0 0;
- }
- header .hero p {
-   font-size: 22px;
-   line-height: 26px;
-   font-weight: 100;
-   margin:10px 0 40px;
- }
- header .hero {
-   text-align: center;
-   display:block;
-   position: relative;
- }
-
- /* BUTTONS */
- .btn {
-   border-radius: 6px;
-   color:#FFFFFF;
-   font-weight: 500;
-   font-size: 18px;
-   text-decoration: none;
-   padding:10px 30px;
-   background: #30B9C3;
-   border: 2px solid #30B9C3;
-   box-shadow: 0px 2px 2px 0px #1EE3F2;
- }
-
-
-
+ .testimonials img {
+    height: 65px;
+    width: 65px;
+    display: inline-block;
+    vertical-align: middle;
+    margin:20px 10px 0 0;
+  }
+  .testimonials p.name {
+    display: inline-block;
+    text-align: left;
+    font-size:13px;
+    vertical-align: middle;
+    margin-top: 30px;
+  }
 
 
  /* Media Queries */
