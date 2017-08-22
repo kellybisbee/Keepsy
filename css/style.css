@@ -387,9 +387,6 @@ header .hero {
     .notes, .images, .links {
       text-align: center;
     }
-    .fa-check {
-      text-align: center;
-    }
     .notes .container {
       flex-direction: column;
       justify-content: center;
@@ -414,6 +411,12 @@ header .hero {
     }
     .row .text-block {
       order: 1;
+    }
+    footer {
+      height: auto;
+    }
+    .fa-ul {
+      text-align: left;
     }
   }
   @media (min-width: 992px) {
