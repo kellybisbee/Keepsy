@@ -447,3 +447,35 @@ header .hero {
       width: 1170px;
     }
   }
+
+
+/*DASHBOARD */
+
+  /*TOP NAV*/
+nav .top-nav {
+  height: 80px;
+  background-color: #EAEAEA;
+}
+.flex-container {
+  width: 85.33%;
+  margin: 0 auto 0 218px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.flex-container ul {
+  display: flex;
+}
+.flex-container ul li {
+  list-style-type: none;
+}
+.flex-container ul li a {
+  text-decoration: none;
+}
+.flex-middle li {
+  padding: 60px;
+}
+.flex-right li {
+  padding: 10px;
+}
