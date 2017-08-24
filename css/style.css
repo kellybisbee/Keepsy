@@ -553,6 +553,13 @@ header .hero {
   text-align: center;
   margin-right: 8px;
 }
+.left-nav .items ul li.active a {
+  color: #1EE3F2;
+  font-weight: 500;
+}
+.left-nav .items ul li a:hover {
+  font-style: italic;
+}
 
 hr {
   width: 85%;
