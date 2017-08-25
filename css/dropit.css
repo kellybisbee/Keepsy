@@ -8,8 +8,9 @@
  */
 
 /* These styles assume you are using ul and li */
+
 .dropit {
-    list-style: none;
+  list-style: none;
 	padding: 0;
 	margin: 0;
   display: flex;
@@ -17,14 +18,14 @@
 .dropit .dropit-trigger { position: relative; }
 .dropit .dropit-submenu {
     position: absolute;
-    top: 100%;
-    right: 0; /* dropdown left or right */
+    top: 82%;
+    right: 30px; /* dropdown left or right */
     z-index: 1000;
     display: none;
     min-width: 100px;
     list-style: none;
-	padding: 20px;
-	margin: 20px 0 0;
+	  padding: 20px;
+	  margin: 0;
 }
 .dropit .dropit-open .dropit-submenu {
   display: block;
@@ -37,16 +38,16 @@
   position: absolute;
   border-style: solid;
   border-width: 0 8px 8px;
-  border-color: #FFF transpoarent;
+  border-color: #FFF transparent;
   display: block;
   width: 0;
   z-index: 1;
   top: -8px;
-  right: 10px;
+  right: 58px;
 }
 .dropit .dropit-open .dropit-submenu li {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .dropit .dropit-open .dropit-submenu li:last-child {
   margin-bottom: 0px;
@@ -56,4 +57,8 @@
   text-decoration: none;
   font-family: 'Proxima Nova', proxima-nova, Helvetica, sans-serif;
   font-weight:100;
+  font-size: 14px;
+}
+.dropit .dropit-open .dropit-submenu li a i {
+  margin-right: 8px;
 }

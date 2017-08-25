@@ -26,25 +26,27 @@
     <div class="flex-container">
       <a href="#" class="site-logo"><img src="Images/footer-logo.png"/></a>
       <h1>All Items</h1>
-      <ul class="flex-middle">
+      <ul class="menu flex-middle">
         <li class="btn-outline" id="search"><a href="#">Search</a></li>
         <li>
-          <ul class="menu">
-            <li>
               <a href="#" class="btn">+ Add</a>
               <ul>
                   <li><a href="#"><i class="fa fa-file-o"></i> Note</a></li>
                   <li><a href="#"><i class="fa fa-picture-o"></i> Image</a></li>
                   <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
               </ul>
-            </li>
-          </ul>
         </li>
         <li class="btn-outline" id="sort"><a href="#">Sort</a></li>
       </ul>
-      <ul class="flex-right">
+      <ul class=" menu-settings flex-right">
         <li class="avatar"><a href="#"><img src="Images/settings-image.png"/></a></li>
-        <li><a href="#"><p>Kelly Bisbee</p></a></li>
+        <li>
+          <a href="#"><p>Kelly Bisbee</p></a>
+          <ul>
+              <li><a href="#"><i class="fa fa-gear"></i> My Account</a></li>
+              <li><a href="#"><i class="fa fa-sign-out"></i> Sign Out</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </nav>
@@ -159,6 +161,9 @@
   <script src="js/dropit.js"></script>
   <script type="text/javascript">
     $(".menu").dropit();
+  </script>
+  <script type="text/javascript">
+    $(".menu-settings").dropit();
   </script>
 </body>
 </html>
