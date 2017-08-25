@@ -474,7 +474,7 @@ header .hero {
 .flex-container ul li a {
   text-decoration: none;
 }
-.flex-middle li {
+.flex-middle > li {
   padding: 45px;
 }
 .flex-right li {

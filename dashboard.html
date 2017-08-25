@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/dropit.css">
 </head>
 
 <body class="dashboard">
@@ -27,7 +28,18 @@
       <h1>All Items</h1>
       <ul class="flex-middle">
         <li class="btn-outline" id="search"><a href="#">Search</a></li>
-        <li><a href="#" class="btn">+ Add</a></li>
+        <li>
+          <ul class="menu">
+            <li>
+              <a href="#" class="btn">+ Add</a>
+              <ul>
+                  <li><a href="#"><i class="fa fa-file-o"></i> Note</a></li>
+                  <li><a href="#"><i class="fa fa-picture-o"></i> Image</a></li>
+                  <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li class="btn-outline" id="sort"><a href="#">Sort</a></li>
       </ul>
       <ul class="flex-right">
@@ -143,5 +155,10 @@
        </div>
      </div>
 
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/dropit.js"></script>
+  <script type="text/javascript">
+    $(".menu").dropit();
+  </script>
 </body>
 </html>
