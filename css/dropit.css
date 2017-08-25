@@ -9,14 +9,14 @@
 
 /* These styles assume you are using ul and li */
 
-.dropit {
+.menu.dropit {
   list-style: none;
 	padding: 0;
 	margin: 0;
   display: flex;
 }
-.dropit .dropit-trigger { position: relative; }
-.dropit .dropit-submenu {
+.menu.dropit .dropit-trigger { position: relative; }
+.menu.dropit .dropit-submenu {
     position: absolute;
     top: 82%;
     right: 30px; /* dropdown left or right */
@@ -27,13 +27,13 @@
 	  padding: 20px;
 	  margin: 0;
 }
-.dropit .dropit-open .dropit-submenu {
+.menu.dropit .dropit-open .dropit-submenu {
   display: block;
   background: #FFF;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,.30);
   border-radius: 4px;
 }
-.dropit .dropit-open .dropit-submenu:after {
+.menu.dropit .dropit-open .dropit-submenu:after {
   content: " ";
   position: absolute;
   border-style: solid;
@@ -45,20 +45,76 @@
   top: -8px;
   right: 58px;
 }
-.dropit .dropit-open .dropit-submenu li {
+.menu.dropit .dropit-open .dropit-submenu li {
   display: block;
   margin-bottom: 15px;
 }
-.dropit .dropit-open .dropit-submenu li:last-child {
+.menu.dropit .dropit-open .dropit-submenu li:last-child {
   margin-bottom: 0px;
 }
-.dropit .dropit-open .dropit-submenu li a {
+.menu.dropit .dropit-open .dropit-submenu li a {
   color:#D70582;
   text-decoration: none;
   font-family: 'Proxima Nova', proxima-nova, Helvetica, sans-serif;
   font-weight:100;
   font-size: 14px;
 }
-.dropit .dropit-open .dropit-submenu li a i {
+.menu.dropit .dropit-open .dropit-submenu li a i {
+  margin-right: 8px;
+}
+
+/*Menu Settings*/
+
+.menu-settings.dropit {
+  list-style: none;
+	padding: 0;
+	margin: 0;
+  display: flex;
+}
+.menu-settings.dropit .dropit-trigger { position: relative; }
+.menu-settings.dropit .dropit-submenu {
+    position: absolute;
+    top: 82%;
+    right: 0px; /* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    min-width: 150px;
+    list-style: none;
+	  padding: 20px;
+	  margin: 0;
+}
+.menu-settings.dropit .dropit-open .dropit-submenu {
+  display: block;
+  background: #FFF;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,.30);
+  border-radius: 4px;
+}
+.menu-settings.dropit .dropit-open .dropit-submenu:after {
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  border-width: 0 8px 8px;
+  border-color: #FFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: -8px;
+  right: 45px;
+}
+.menu-settings.dropit .dropit-open .dropit-submenu li {
+  display: block;
+  margin-bottom: 0px;
+}
+.menu-settings.dropit .dropit-open .dropit-submenu li:last-child {
+  margin-bottom: 0px;
+}
+.menu-settings.dropit .dropit-open .dropit-submenu li a {
+  color:#D70582;
+  text-decoration: none;
+  font-family: 'Proxima Nova', proxima-nova, Helvetica, sans-serif;
+  font-weight:100;
+  font-size: 14px;
+}
+.menu-settings.dropit .dropit-open .dropit-submenu li a i {
   margin-right: 8px;
 }
