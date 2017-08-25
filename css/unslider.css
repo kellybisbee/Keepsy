@@ -24,3 +24,8 @@
   margin-right: 400px;
   border-radius: 4px;
 }
+
+@media (max-width: 991px) {
+  .testimonials ul li blockquote {
+  width: 80%;
+}
