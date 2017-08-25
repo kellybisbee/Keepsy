@@ -167,8 +167,9 @@
       <p>Keepsy has more than 100,000 satisfied users storing and collaborating
         with teams<br/>across the world. Here's what a few have to say:</p>
       </div>
+
       <!--Text slider -->
-      <div class="my-slider">
+      <div class="my-slider slider">
         <ul>
           <li>
             <blockquote> "Keepsy has made it easier to find and keep things
@@ -221,55 +222,6 @@
         </ul>
       </div>
     </section>
-        <!---Old slider
-        <div class="arrows">
-          <a class="previous" href="#">&#xf054;</a>
-        </div>
-        <div class="slides">
-          <div class="slide active white">
-            <blockquote>"Keepsy has made it easier to find and keep things
-               I love. I can share with other designers on my team and create
-               new categories with awesome stuff. And creating simple text
-               documents couldn't be easier."
-             </blockquote>
-             <img src="Images/testimonial.png"/>
-             <p class="name"><strong>Henry J.</strong>
-               <br/>Design Student, Oregon</p>
-             </div>
-             <div class="slide white">
-               <blockquote>"Keepsy has made it easier to find and keep things
-                  I love. I can share with other designers on my team and create
-                  new categories with awesome stuff. And creating simple text
-                  documents couldn't be easier."
-                </blockquote>
-                <img src="Images/testimonial.png"/>
-                <p class="name"><strong>Henry J.</strong>
-                  <br/>Design Student, Oregon</p>
-                </div>
-                <div class="slide white">
-                  <blockquote>"Keepsy has made it easier to find and keep things
-                     I love. I can share with other designers on my team and create
-                     new categories with awesome stuff. And creating simple text
-                     documents couldn't be easier."
-                   </blockquote>
-                   <img src="Images/testimonial.png"/>
-                   <p class="name"><strong>Henry J.</strong>
-                     <br/>Design Student, Oregon</p>
-                   </div>
-                   <div class="slide white">
-                     <blockquote>"Keepsy has made it easier to find and keep things
-                        I love. I can share with other designers on my team and create
-                        new categories with awesome stuff. And creating simple text
-                        documents couldn't be easier."
-                      </blockquote>
-                      <img src="Images/testimonial.png"/>
-                      <p class="name"><strong>Henry J.</strong>
-                        <br/>Design Student, Oregon</p>
-                      </div>
-           </div>
-           <div class="bullets">
-           </div> -->
-
 
 
   <!--Call to Action -->
@@ -310,10 +262,17 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/unslider.js"></script>
 <script>
-  jQuery(document).ready(function($) {
-    $('.my-slider').unslider();
+		jQuery(document).ready(function($) {
+      $('.my-slider').unslider();
   });
-</script>
+      $('.my-slider').unslider({
+        arrows: {
+        next: '<a class="unslider-arrow next"><i class="fa fa-angle-right"></i></a>',
+        prev: '<a class="unslider-arrow prev"><i class="fa fa-angle-left"></i></a>'
+      }
+    });
+
+	</script>
 
 
 </body>

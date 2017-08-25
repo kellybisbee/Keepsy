@@ -288,12 +288,19 @@ header .hero {
  .testimonials {
    padding:4em 0;
    text-align: center;
+   background-color: #FFF;
  }
+
  .testimonials h2 {
    color:#D70582;
  }
  .testimonials ul li {
    list-style-type: none;
+   margin-left: auto;
+   margin-right: auto;
+   height: 175px;
+   padding-bottom: 10px;
+   padding-top: 40px;
  }
  .testimonials img {
     height: 65px;
@@ -308,7 +315,14 @@ header .hero {
     font-size:13px;
     vertical-align: middle;
     margin-top: 30px;
+    color: #fff;
   }
+.testimonials ul li blockquote {
+  margin-left: 50px;
+  margin-right: 50px;
+  color: #fff;
+  margin-bottom: 0;
+}
 
 /*FOOTER */
 /* FOOTER */
@@ -367,6 +381,7 @@ header .hero {
 .CTA {
   padding:4em 0;
   text-align: center;
+  background-color: rgba(48,185, 195, .25);
 }
 .CTA .container > h3 {
   color: #D70582
