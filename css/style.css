@@ -368,6 +368,9 @@ header .hero {
    margin: 0 auto;
    display: block;
  }
+ footer .middle-footer-block {
+   padding-top: 5px;
+ }
  @media (min-width: 992px){
   footer{
     background-color: #EAEAEA;
