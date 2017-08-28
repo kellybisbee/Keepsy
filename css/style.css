@@ -328,7 +328,11 @@ header .hero {
   margin-bottom: 0;
   line-height: 21px;
 }
-
+@media (max-width: 767px){
+  .testimonials ul li {
+    height: auto;
+  }
+}
 
 /*FOOTER */
 /* FOOTER */
@@ -513,11 +517,19 @@ header .hero {
   color: #D70582;
 }
 #search a {
-  color: #30B9C3;
+  color: rgba(48, 185, 195, .60);
   font-size: 16px;
-  padding: 10px 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   border: 1px solid #30B9C3;
   border-radius: 6px;
+  text-align: left;
+}
+#search i {
+  text-align: right;
+  padding-left: 60px;
 }
 #sort a {
   color: #30B9C3;

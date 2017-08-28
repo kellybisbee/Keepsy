@@ -19,7 +19,24 @@
 .slider {
   background: #D70582;
   box-shadow: 0 2px 4px 0 rgba(138,17,89,0.40);
-  margin-left: 400px;
-  margin-right: 400px;
+  margin-left: 28%;
+  margin-right: 28%;
   border-radius: 4px;
+}
+
+
+@media (max-width: 767px){
+  .slider {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: auto;
+  }
+}
+@media (max-width: 991px){
+  .slider {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 10px;
+    height: auto;
+  }
 }
