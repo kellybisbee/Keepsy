@@ -412,6 +412,9 @@ header .hero {
     }
   }
   @media (max-width: 991px) {
+    header {
+      height: 100%;
+    }
     .notes, .images, .links {
       text-align: center;
     }
